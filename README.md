@@ -9,6 +9,11 @@
 <h1 align="center">Locomotive Scroll</h1>
 <p align="center">Detection of elements in viewport & smooth scrolling with parallax effects.</p>
 
+# Disclaimer
+This is a custom fork of [`locomotive-scroll`](https://github.com/locomotivemtl/locomotive-scroll)
+With only a minor difference: exposing transform distance of parallaxed element.
+
+
 ## Installation
 
 ```sh

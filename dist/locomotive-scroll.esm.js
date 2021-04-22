@@ -2058,6 +2058,8 @@ var _default$2 = /*#__PURE__*/function (_Core) {
 
     _classCallCheck(this, _default);
 
+    console.log('--- CUSTOM FORK LOCOMOTIVE SCROLL ---');
+
     if (history.scrollRestoration) {
       history.scrollRestoration = 'manual';
     }
@@ -2829,6 +2831,8 @@ var _default$2 = /*#__PURE__*/function (_Core) {
             }
           }
         }
+
+        current.transformDistance = transformDistance;
 
         if (transformDistance !== false) {
           if (current.direction === 'horizontal' || _this8.direction === 'horizontal' && current.direction !== 'vertical') {
