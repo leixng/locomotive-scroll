@@ -1086,6 +1086,7 @@
       _classCallCheck(this, _default);
 
       _this = _super.call(this, options);
+      _this.type = 'native';
 
       if (_this.resetNativeScroll) {
         if (history.scrollRestoration) {
@@ -2072,6 +2073,7 @@
 
       window.scrollTo(0, 0);
       _this = _super.call(this, options);
+      _this.type = 'smooth';
       if (_this.inertia) _this.lerp = _this.inertia * 0.1;
       _this.isScrolling = false;
       _this.isDraggingScrollbar = false;

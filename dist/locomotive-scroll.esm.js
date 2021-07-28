@@ -1080,6 +1080,7 @@ var _default$1 = /*#__PURE__*/function (_Core) {
     _classCallCheck(this, _default);
 
     _this = _super.call(this, options);
+    _this.type = 'native';
 
     if (_this.resetNativeScroll) {
       if (history.scrollRestoration) {
@@ -2066,6 +2067,7 @@ var _default$2 = /*#__PURE__*/function (_Core) {
 
     window.scrollTo(0, 0);
     _this = _super.call(this, options);
+    _this.type = 'smooth';
     if (_this.inertia) _this.lerp = _this.inertia * 0.1;
     _this.isScrolling = false;
     _this.isDraggingScrollbar = false;
@@ -3136,7 +3138,8 @@ var Native = /*#__PURE__*/function () {
 
     _classCallCheck(this, Native);
 
-    this.options = options; // Override default options with given ones
+    this.options = options;
+    this.type = 'native'; // Override default options with given ones
 
     Object.assign(this, defaults, options);
     this.smartphone = defaults.smartphone;
