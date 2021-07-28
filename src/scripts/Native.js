@@ -4,6 +4,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 export default class extends Core {
     constructor(options = {}) {
         super(options);
+        this.type = 'native';
 
         if (this.resetNativeScroll) {
             if (history.scrollRestoration) {
@@ -232,7 +233,9 @@ export default class extends Core {
             offset = target + offset;
         }
 
-        const isTargetReached = () => { return parseInt(window.pageYOffset) === parseInt(offset) }
+        const isTargetReached = () => {
+            return parseInt(window.pageYOffset) === parseInt(offset);
+        };
         if (callback) {
             if (isTargetReached()) {
                 callback();

@@ -4,6 +4,7 @@ import Scroll from './Native';
 export class Native {
     constructor(options = {}) {
         this.options = options;
+        this.type = 'native';
 
         // Override default options with given ones
         Object.assign(this, defaults, options);

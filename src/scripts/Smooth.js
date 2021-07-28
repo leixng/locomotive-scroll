@@ -27,6 +27,7 @@ export default class extends Core {
         window.scrollTo(0, 0);
 
         super(options);
+        this.type = 'smooth';
 
         if (this.inertia) this.lerp = this.inertia * 0.1;
         this.isScrolling = false;
