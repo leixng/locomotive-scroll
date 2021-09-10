@@ -5,7 +5,6 @@ import SmoothScroll from './Smooth';
 export class Smooth {
     constructor(options = {}) {
         this.options = options;
-
         // Override default options with given ones
         Object.assign(this, defaults, options);
         this.smartphone = defaults.smartphone;

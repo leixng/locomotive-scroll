@@ -2059,8 +2059,6 @@ var _default$2 = /*#__PURE__*/function (_Core) {
 
     _classCallCheck(this, _default);
 
-    console.log('--- CUSTOM FORK LOCOMOTIVE SCROLL ---');
-
     if (history.scrollRestoration) {
       history.scrollRestoration = 'manual';
     }

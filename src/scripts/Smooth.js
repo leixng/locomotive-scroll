@@ -20,7 +20,6 @@ const keyCodes = {
 
 export default class extends Core {
     constructor(options = {}) {
-        console.log('--- CUSTOM FORK LOCOMOTIVE SCROLL ---');
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
         }
